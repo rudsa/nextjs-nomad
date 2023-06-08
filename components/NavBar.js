@@ -6,16 +6,16 @@ export default function NavBar() {
 
   return (
     <nav>
-      <Link href="/" style={{ textDecoration: "none" }}>
+      <Link href="/">
         <span className={router.pathname === "/" ? "active" : ""}>Home</span>
       </Link>
-      <Link href="/about" style={{ textDecoration: "none" }}>
+      <Link href="/about">
         <span className={router.pathname === "/about" ? "active" : ""}>
           About
         </span>
       </Link>
       <style jsx>{`
-        Link {
+        a. {
           text-decoration: none;
         }
         .active {
